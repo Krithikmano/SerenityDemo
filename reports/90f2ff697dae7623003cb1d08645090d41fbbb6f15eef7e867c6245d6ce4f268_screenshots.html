@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity and Cucumber Quick Start</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="d8a0fd19a0306d22ac407bafa91dc465114f19d0a01e120f21bd60882254bb47.html">Validate User Form</a></span>
+                > <span class="truncate-60"><a
+                    href="90f2ff697dae7623003cb1d08645090d41fbbb6f15eef7e867c6245d6ce4f268.html">User able to Submit Tell us YourSelf Form successfully </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-02-2020 19:51</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Validate User Form</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">User able to Submit Tell us YourSelf Form successfully
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given Open the application<br>And fill the follwing user information "&lt;address&gt;","&lt;city&gt;","&lt;state&gt;","&lt;zipCode&gt;","&lt;email&gt;","&lt;pboneNumber&gt;","&lt;dob&gt;"<br>And submit the form<br>Then verify user is navigated to summaryPage<br>And click Continue button in the summaryPage<br>Then verify user is navigated to successPage</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="477a33fc15e9653aa1497b62a251c157e1727f3695178bc1badefc0066b78765.png" title=" Example #1: {address=758 Lakeview,1A, city=Chicago, state=IL, zipCode=60090, email=test1@gmai.com, pboneNumber=8474141830, dob=12-01-1990}" width="1366"/>
+                <img src="477a33fc15e9653aa1497b62a251c157e1727f3695178bc1badefc0066b78765.png" title=" Given Open the application" width="1366"/>
+                <img src="477a33fc15e9653aa1497b62a251c157e1727f3695178bc1badefc0066b78765.png" title=" And fill the follwing user information &quot;758 Lakeview,1A&quot;,&quot;Chicago&quot;,&quot;IL&quot;,&quot;60090&quot;,&quot;test1@gmai.com&quot;,&quot;8474141830&quot;,&quot;12-01-1990&quot;" width="1366"/>
+                <img src="9cce06493a2e35bbbad9546cf43c45bb86dfcd21f956d960bfad0430a9fcb7a7.png" title=" And fill the follwing user information &quot;758 Lakeview,1A&quot;,&quot;Chicago&quot;,&quot;IL&quot;,&quot;60090&quot;,&quot;test1@gmai.com&quot;,&quot;8474141830&quot;,&quot;12-01-1990&quot; (completed)" width="1366"/>
+                <img src="9cce06493a2e35bbbad9546cf43c45bb86dfcd21f956d960bfad0430a9fcb7a7.png" title=" And submit the form" width="1366"/>
+                <img src="0efd6a57c6d2d014fd1813a5e20f5b830c44ebca971377e7a42ed010a24919bf.png" title=" And submit the form (completed)" width="1366"/>
+                <img src="0efd6a57c6d2d014fd1813a5e20f5b830c44ebca971377e7a42ed010a24919bf.png" title=" Then verify user is navigated to summaryPage" width="1366"/>
+                <img src="0efd6a57c6d2d014fd1813a5e20f5b830c44ebca971377e7a42ed010a24919bf.png" title=" Then verify user is navigated to summaryPage (completed)" width="1366"/>
+                <img src="0efd6a57c6d2d014fd1813a5e20f5b830c44ebca971377e7a42ed010a24919bf.png" title=" And click Continue button in the summaryPage" width="1366"/>
+                <img src="e19ba49c69fcd891d30d9e7b3d6e42c03b3df25ee2a6f3895d38cd2673ddd1c2.png" title=" And click Continue button in the summaryPage (completed)" width="1366"/>
+                <img src="e19ba49c69fcd891d30d9e7b3d6e42c03b3df25ee2a6f3895d38cd2673ddd1c2.png" title=" Then verify user is navigated to successPage" width="1366"/>
+                <img src="e19ba49c69fcd891d30d9e7b3d6e42c03b3df25ee2a6f3895d38cd2673ddd1c2.png" title=" Then verify user is navigated to successPage (completed)" width="1366"/>
+                <img src="e19ba49c69fcd891d30d9e7b3d6e42c03b3df25ee2a6f3895d38cd2673ddd1c2.png" title=" Example #1: {address=758 Lakeview,1A, city=Chicago, state=IL, zipCode=60090, email=test1@gmai.com, pboneNumber=8474141830, dob=12-01-1990} (completed)" width="1366"/>
+                <img src="477a33fc15e9653aa1497b62a251c157e1727f3695178bc1badefc0066b78765.png" title=" Example #2: {address=1405 Fairway,2B, city=Raligh, state=NC, zipCode=27616, email=test2@gmai.com, pboneNumber=8474141831, dob=01-01-1995}" width="1366"/>
+                <img src="477a33fc15e9653aa1497b62a251c157e1727f3695178bc1badefc0066b78765.png" title=" Given Open the application" width="1366"/>
+                <img src="477a33fc15e9653aa1497b62a251c157e1727f3695178bc1badefc0066b78765.png" title=" And fill the follwing user information &quot;1405 Fairway,2B&quot;,&quot;Raligh&quot;,&quot;NC&quot;,&quot;27616&quot;,&quot;test2@gmai.com&quot;,&quot;8474141831&quot;,&quot;01-01-1995&quot;" width="1366"/>
+                <img src="662936d908b5775f903066cc44cd7ebe34402451786bd3f6f4d37dd48dbbe2cf.png" title=" And fill the follwing user information &quot;1405 Fairway,2B&quot;,&quot;Raligh&quot;,&quot;NC&quot;,&quot;27616&quot;,&quot;test2@gmai.com&quot;,&quot;8474141831&quot;,&quot;01-01-1995&quot; (completed)" width="1366"/>
+                <img src="662936d908b5775f903066cc44cd7ebe34402451786bd3f6f4d37dd48dbbe2cf.png" title=" And submit the form" width="1366"/>
+                <img src="1d2d0c154388e792a5bce4eeac1258b3ba31b3029410a4ce8ce25e18fed620cf.png" title=" And submit the form (completed)" width="1366"/>
+                <img src="1d2d0c154388e792a5bce4eeac1258b3ba31b3029410a4ce8ce25e18fed620cf.png" title=" Then verify user is navigated to summaryPage" width="1366"/>
+                <img src="1d2d0c154388e792a5bce4eeac1258b3ba31b3029410a4ce8ce25e18fed620cf.png" title=" Then verify user is navigated to summaryPage (completed)" width="1366"/>
+                <img src="1d2d0c154388e792a5bce4eeac1258b3ba31b3029410a4ce8ce25e18fed620cf.png" title=" And click Continue button in the summaryPage" width="1366"/>
+                <img src="e19ba49c69fcd891d30d9e7b3d6e42c03b3df25ee2a6f3895d38cd2673ddd1c2.png" title=" And click Continue button in the summaryPage (completed)" width="1366"/>
+                <img src="e19ba49c69fcd891d30d9e7b3d6e42c03b3df25ee2a6f3895d38cd2673ddd1c2.png" title=" Then verify user is navigated to successPage" width="1366"/>
+                <img src="e19ba49c69fcd891d30d9e7b3d6e42c03b3df25ee2a6f3895d38cd2673ddd1c2.png" title=" Example #2: {address=1405 Fairway,2B, city=Raligh, state=NC, zipCode=27616, email=test2@gmai.com, pboneNumber=8474141831, dob=01-01-1995} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.55</span>
+</div>
+</body>
+</html>
