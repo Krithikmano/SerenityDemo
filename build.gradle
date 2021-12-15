@@ -1,50 +1,51 @@
-defaultTasks 'clean','test','aggregate'
+defaultTasks 'clean', 'test', 'aggregate'
 
 repositories {
-    mavenLocal()
-    jcenter()
+    mavenCentral()
 }
 
 buildscript {
     repositories {
-        mavenLocal()
-        jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
     dependencies {
-        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.52")
+        classpath "net.serenity-bdd:serenity-gradle-plugin:3.1.5"
     }
 }
+
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
-apply plugin: 'net.serenity-bdd.aggregator'
-apply from: "$rootDir/gradle/libraries.gradle"
-
+apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-/**
- * This is needed to make sure there are no Cucumber 2 dependencies in the classpath.
- */
-configurations.all {
-    resolutionStrategy {
-        force "io.cucumber:cucumber-core:${cucumberVersion}"
-    }
+ext {
+    slf4jVersion = '1.7.7'
+    serenityCoreVersion = '3.1.5'
+    serenityCucumberVersion = '3.1.5'
+    junitVersion = '4.13.1'
+    assertJVersion = '3.8.0'
+    logbackVersion = '1.2.3'
 }
-dependencies {
-    compile libs.logback
 
-    testCompile libs.test.cucumber.java,
-            libs.test.cucumber.junit,
-            libs.test.serenity.core,
-            libs.test.serenity.screenplay,
-            libs.test.serenity.junit,
-            libs.test.serenity.screenplayWebdriver,
-            libs.test.serenity.cucumber,
-            libs.test.junit,
-            libs.test.assertj
+dependencies {
+    implementation "ch.qos.logback:logback-classic:${logbackVersion}"
+
+    testImplementation "net.serenity-bdd:serenity-core:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-cucumber:${serenityCucumberVersion}",
+            "net.serenity-bdd:serenity-screenplay:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-screenplay-webdriver:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-ensure:${serenityCoreVersion}",
+            "junit:junit:${junitVersion}",
+            "org.junit.platform:junit-platform-launcher:1.8.1",
+            "org.junit.jupiter:junit-jupiter-engine:5.8.1",
+            "org.junit.vintage:junit-vintage-engine:5.8.1",
+            "org.assertj:assertj-core:${assertJVersion}"
 }
 
 test {
