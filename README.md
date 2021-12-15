@@ -1,4 +1,4 @@
-# selfProject
+# SerenityDemo
 Steps for Execute the script
 
 1. Download the project in local
