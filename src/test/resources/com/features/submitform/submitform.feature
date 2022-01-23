@@ -2,7 +2,7 @@ Feature: Validate User Form
 
   Scenario Outline: User able to Submit Tell us YourSelf Form successfully
     Given Open the application
-    And fill the follwing user information "<address>","<city>","<state>","<zipCode>","<email>","<pboneNumber>","<dob>"
+    And fill the following user information "<address>","<city>","<state>","<zipCode>","<email>","<pboneNumber>","<dob>"
     And submit the form
     Then verify user is navigated to summaryPage
     And click Continue button in the summaryPage

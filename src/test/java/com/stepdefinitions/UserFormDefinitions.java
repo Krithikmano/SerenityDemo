@@ -18,8 +18,8 @@ public class UserFormDefinitions {
     	userFormPages.openApplication();
     }
 
-    @Given("fill the follwing user information {string},{string},{string},{string},{string},{string},{string}")
-    public void fill_the_follwing_user_information(String address, String city, String state, String zip, String email, String phone, String dob) {
+    @Given("fill the following user information {string},{string},{string},{string},{string},{string},{string}")
+    public void fill_the_fololwing_user_information(String address, String city, String state, String zip, String email, String phone, String dob) {
     	userFormPages.enterUserInformation(address, city, state, zip, email, phone, dob);
     }
 
